@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <div class="price">{{ tile.price }}Rp</div>
+      <div class="price">Rp{{ tile.price }}</div>
     </div>
   </section>
 </template>

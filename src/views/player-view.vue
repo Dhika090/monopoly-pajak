@@ -6,7 +6,7 @@
         <p>name: {{ player.name }}</p>
       </div>
       <div class="balance">
-        <p>balance: {{ player.balance }}</p>
+        <p>saldo: {{ player.balance }}</p>
       </div>
     </div>
     <div class="containerr" v-if="player">

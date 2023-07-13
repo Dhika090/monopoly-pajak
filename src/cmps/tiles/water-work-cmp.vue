@@ -4,7 +4,7 @@
       <span class="waterwoks"> Waterworks </span>
       <i class="drawing fa fa-tint"></i>
     </div>
-    <p class="price">{{ tile.price }}Rp</p>
+    <p class="price">Rp{{ tile.price }}</p>
 
     <div v-if="tile.players.length" class="players">
       <div class="player" v-for="player in tile.players" :key="player">

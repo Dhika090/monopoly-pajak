@@ -4,17 +4,17 @@
     <!-- <header class="header"></header> -->
     <div class="container">
       <div>
-        Choose one last Boards:
+        Pilih satu Papan terakhir:
         <div v-for="board in boards" :key="board._id">
           <p class="opt-board" @click="goToBoard(board._id)">
-            Board: {{ board._id }} <br />
-            {{ board.players.length }} players
+            Papan: {{ board._id }} <br />
+            {{ board.players.length }} pemain
           </p>
           <p></p>
         </div>
       </div>
 
-      <h1 style="padding-bottom: 2rem;">players:</h1>
+      <h1 style="padding-bottom: 2rem;">pemain:</h1>
       <div 
         class="players-to-add"
         v-for="player in playersToAdd"

@@ -6,8 +6,8 @@
       <div class="logoo">f</div>
     </div>
     <div class="footer">
-      <p>Pay</p>
-      <p>{{ tile.price }}$</p>
+      <p>Membayar</p>
+      <p>Rp{{ tile.price }}</p>
     </div>
 
     <div v-if="tile.players.length" class="players">

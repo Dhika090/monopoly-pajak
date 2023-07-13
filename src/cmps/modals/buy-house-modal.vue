@@ -5,7 +5,7 @@
         <p>
           {{ currPLayer.name }}, apakah anda ingin membeli{{ houseHotelStr }} di kota ini?
         </p>
-        <p>{{ card.houseCost }}$</p>
+        <p>Rp{{ card.houseCost }}</p>
       </div>
 
       <div class="body-modal">
