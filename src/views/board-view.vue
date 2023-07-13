@@ -418,7 +418,7 @@ export default {
         type: 'payRent',
         currTile,
       })
-      const msg = `${this.currPLayer.name} pay $${amount} rent, to ${currTile.owner.name}`
+      const msg = `${this.currPLayer.name} membayar $${amount} sewa, ke ${currTile.owner.name}`
       this.showUpdate(msg, 7000)
     },
     openBuyHouseModal(name) {
