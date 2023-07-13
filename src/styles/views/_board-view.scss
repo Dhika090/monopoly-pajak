@@ -1,0 +1,422 @@
+.board-view {
+  // background-color: rgba(104, 56, 20, 0.673);
+  background: url('https://images-na.ssl-images-amazon.com/images/S/pv-target-images/aa22f7bd40726af6afd9c54799b3cbe996ade4542b502f08f8d64e832f2e18b1._RI_.jpg');
+
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  .board-container {
+    min-width: 500px;
+    min-height: 500px;
+    display: grid;
+
+    border: 3px solid;
+    border-radius: 7px;
+
+    grid-template-columns: 100px repeat(9, 68px) 100px;
+    grid-template-rows: 100px repeat(9, 50px) 100px;
+
+    .tile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      font-size: 10px;
+      // border-right: 2px solid;
+      background-color: #fac17e;
+      text-transform: uppercase;
+      outline: 1px solid;
+      // border-left: 1px solid;
+      z-index: 2;
+
+      .conainer {
+        div {
+          // width: 100%;
+        }
+      }
+
+      .color-bar {
+        outline: 1px solid;
+      }
+    }
+
+    .tile-10 {
+      border-right: unset;
+    }
+
+    .tile-11 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 2;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-12 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 3;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-13 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 4;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-14 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 5;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-15 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 6;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-16 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 7;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-17 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 8;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-18 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 9;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-19 {
+      // background-color: beige;
+      grid-column: 11;
+      grid-row: 10;
+
+      transform: rotate(-90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-20 {
+      // background-color: beige;
+      // border-top: 2px solid;
+      grid-column: 11;
+      grid-row: 11;
+      border-right: unset;
+      border-bottom-right-radius: 5px;
+    }
+    .tile-21 {
+      // background-color: beige;
+      grid-column: 10;
+      grid-row: 11;
+    }
+    .tile-22 {
+      // background-color: beige;
+      grid-column: 9;
+      grid-row: 11;
+    }
+    .tile-23 {
+      // background-color: beige;
+      grid-column: 8;
+      grid-row: 11;
+    }
+    .tile-24 {
+      // background-color: beige;
+      grid-column: 7;
+      grid-row: 11;
+    }
+    .tile-25 {
+      // background-color: beige;
+      grid-column: 6;
+      grid-row: 11;
+    }
+    .tile-26 {
+      // background-color: beige;
+      grid-column: 5;
+      grid-row: 11;
+    }
+    .tile-27 {
+      // background-color: beige;
+      grid-column: 4;
+      grid-row: 11;
+    }
+    .tile-28 {
+      // background-color: beige;
+      grid-column: 3;
+      grid-row: 11;
+    }
+    .tile-29 {
+      // background-color: beige;
+      grid-column: 2;
+      grid-row: 11;
+    }
+    .tile-30 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 11;
+      border-bottom-left-radius: 5px;
+    }
+    .tile-31 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 10;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+      // border-left: 1px solid;
+    }
+    .tile-32 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 9;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+      // border-left: 1px solid;
+    }
+    .tile-33 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 8;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+      // border-left: 1px solid;
+    }
+    .tile-34 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 7;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-35 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 6;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-36 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 5;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-37 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 4;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-38 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 3;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+    }
+    .tile-39 {
+      // background-color: beige;
+      grid-column: 1;
+      grid-row: 2;
+
+      transform: rotate(90deg);
+      width: 50px;
+      height: 100px;
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+      // border-left: 1px solid;
+      .container {
+        div {
+          p {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .center {
+      grid-column: 2/11;
+      grid-row: 2/11;
+      // background-color: hsl(151, 14%, 54%);
+      background-image:url("/src/styles/images/Backgound\ SVG.svg");
+      outline: 1px solid;
+      z-index: 2;
+      border-radius: 1px;
+
+      p {
+        cursor: pointer;
+      }
+    }
+    .chance {
+      border: 1px dashed;
+      grid-column: 3/5;
+      grid-row: 3/5;
+      transform: rotate(-45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      text-transform: uppercase;
+      font-size: 14px;
+      z-index: 3;
+
+      .cards-chance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255 78 84);
+        width: 95%;
+        height: 95%;
+        border-radius: 3px;
+        z-index: 3;
+      }
+    }
+    .logo {
+      // background-color: rgb(12, 11, 7);
+      position: relative;
+      color: rgb(0, 0, 0);
+      grid-column: 5/8;
+      grid-row: 6;
+      font-size: 70px;
+      transform: rotate(-45deg);
+      width: 300px;
+      top: -10px;
+      left: -50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+    }
+
+    .communiyt {
+      position: relative;
+      border: 1px dashed;
+      grid-column: 8/10;
+      grid-row: 8/10;
+      transform: rotate(-45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      text-transform: uppercase;
+      font-size: 14px;
+      z-index: 3;
+
+      .cards-community {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(101 153 255);
+        width: 95%;
+        height: 95%;
+        border-radius: 3px;
+        z-index: 3;
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
