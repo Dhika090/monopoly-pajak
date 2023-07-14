@@ -4,7 +4,7 @@
       <router-link to="/">dashboard </router-link>|
       <!-- <router-link to="/board/ + board._id">board</router-link>| -->
       <!-- <router-link to="/board/player">player</router-link>| -->
-      <router-link to="/about">papan </router-link>|
+      <router-link to="/about">kartu </router-link>|
       <p @click="clear">bersihkan papan</p>
     </div>
     <router-view />
