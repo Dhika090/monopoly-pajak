@@ -1,6 +1,9 @@
 <template>
   <section>
+    
+    <img src="../../src/styles/images/bg-play.jpg" alt="images" style="height: 44rem;">
     <section class="board-view" v-if="board">
+      
       <div class="board-container">
         <component
           :is="cmp"

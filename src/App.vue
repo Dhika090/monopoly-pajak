@@ -37,8 +37,8 @@ export default {
 
 <style>
 .links {
-  left: 3rem;
-  top: 1rem;
+  left: 1.5rem;
+  top: 5rem;
   width: 10rem;
   text-align: center;
   background-color: #f29126;
