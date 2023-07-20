@@ -39,6 +39,7 @@
   import {
     utilService
   } from '../services/util.service'
+  import router from '../router/index'
   export default {
     name: 'home-view',
     data() {
