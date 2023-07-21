@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "scripts": {
     "dev": "vite",
+    "test": "vitest",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom"
