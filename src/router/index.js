@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/Home-view.vue'
+import homeView from '../views/home-view.vue'
 import boardView from '../views/board-view.vue'
 import aboutView from '../views/about-view.vue'
 import playerView from '../views/player-view.vue'
@@ -10,8 +10,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: HomeView,
+      name: 'home',
+      component: homeView,
     },
     {
       path: '/board/:boardId', // /:boardId
