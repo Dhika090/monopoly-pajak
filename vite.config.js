@@ -11,10 +11,18 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: '/monopoly/',
+  base: '/monopoly-pajak/',
   // build: '../backend/public',
   build: {
-    chunkSizeWarningLimit: 3600,
+    rollupOptions: {
+        output:{
+            manualChunks(id) {
+                if (id.includes('node_modules')) {
+                    return id.toString().split('node_modules/')[1].split('/')[0].toString();
+                }
+            }
+        }
+    }
   },
   emptyOutDir: true,
 })
