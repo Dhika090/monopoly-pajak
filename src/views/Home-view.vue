@@ -39,7 +39,7 @@
   } from '../services/util.service'
   import router from '../router/index'
   export default {
-    name: 'home-view',
+    name: 'Home-view',
     data() {
       return {
         name: '',
