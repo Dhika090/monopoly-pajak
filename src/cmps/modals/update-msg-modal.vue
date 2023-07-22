@@ -50,6 +50,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   z-index: 500;
   height: 50px;
   top: 20px;

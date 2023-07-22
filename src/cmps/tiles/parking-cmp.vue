@@ -1,23 +1,4 @@
-<!-- <template>
-  <section class="start-cmp">
-    <div class="conainer">
-      <div class="title" :title="tile.name">
-        <p>
-          {{ tile.name }}
-        </p>
-      </div>
-      <div v-if="tile.players.length" class="players">
-        <div class="player" v-for="player in tile.players" :key="player">
-          <font-awesome-icon
-            :style="{ color: player.colorToken }"
-            class="token-player"
-            icon="chess-pawn"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-</template> -->
+
 <template>
   <section class="parking-cmp" title="Start">
     <div class="containerr">
