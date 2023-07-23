@@ -315,9 +315,9 @@ export default {
     },
     async payTax(taxType) {
       let pay
-      if (taxType === 'Income tax') pay = 200
+      if (taxType === 'Pajak penghasilan, bayar') pay = 1000
       else if (taxType === 'Luxury Tax') pay = 75
-      else if (taxType === 'Water  Works') pay = 100
+      else if (taxType === 'Water  Works') pay = 150
       const msg = `${taxType}, pay ${pay}$`
 
       this.msg = msg

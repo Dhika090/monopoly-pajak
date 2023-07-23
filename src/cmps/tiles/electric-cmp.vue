@@ -1,8 +1,9 @@
 <template>
   <section class="electric-cmp" :title="'Electric-company'">
     <div>
-      <p>Pajak Penerang Jalan</p>
+      <p>Pajak Penerang Jalan 10%</p>
       <!-- <font-awesome-icon class="electric-logo" icon="bolt-lightning" /> -->
+      <i class="drawing fa fa-lightbulb" aria-hidden="true"></i>
     </div>
     <p>Pajak{{ tile.price }}$</p>
 

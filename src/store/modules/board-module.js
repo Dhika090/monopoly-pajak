@@ -258,19 +258,19 @@ export default {
 
         switch (card._id) {
           case 'chance-201': // Advance to "Go". (Collect $200)
-            await dispatch({ type: 'doSteps', newPosition: 0 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 2000 })
             break
-          case 'chance-202': // Advance to Illinois Ave. {Avenue}. If you pass Go, collect $200.
+          case 'chance-202': // MAJU KE KOMPLEK N.. If you pass Go, collect RP2000.
             console.log('chance-202')
-            // if (state.board.currPLayer.position > 35) {
-            //   await dispatch({ type: 'collectMoney', playerIdx, amount: 200 })
-            // }
+            if (state.board.currPLayer.position > 35) {
+              await dispatch({ type: 'collectMoney', playerIdx, amount: 2000 })
+            }
             await dispatch({ type: 'doSteps', newPosition: 24 })
             break
-          case 'chance-203': // Advance to St. Charles Place. If you pass Go, collect $200
+          case 'chance-203': // MAJU KE KOMPLEK N. If you pass Go, collect $2000
             console.log('chance-203')
             if (state.board.currPLayer.position > 35) {
-              await dispatch({ type: 'collectMoney', playerIdx, amount: 200 })
+              await dispatch({ type: 'collectMoney', playerIdx, amount: 2000 })
             }
             await dispatch({ type: 'doSteps', newPosition: 11 })
             break
@@ -300,7 +300,7 @@ export default {
             break
           case 'chance-206': // Bank pays you dividend of $50
             console.log('chance-206')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 50 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 1000 })
             break
           case 'chance-207': // Get out of Jail Free
             console.log('chance-207')
@@ -317,7 +317,7 @@ export default {
           case 'chance-208': // Go Back 3 Spaces
             console.log('chance-208')
             copyBoard = JSON.parse(JSON.stringify(state.board))
-            const posBack = copyBoard.currPLayer.position - 3
+            const posBack = copyBoard.currPLayer.position - 6
             await dispatch({ type: 'doSteps', newPosition: posBack })
             break
           case 'chance-209': // Go to Jail
@@ -334,14 +334,14 @@ export default {
               if (card.houses < 5) homeCount += card.houses
             })
             copyBoard.players[playerIdx].balance -= homeCount * 25
-            copyBoard.players[playerIdx].balance -= hotelCount * 100
+            copyBoard.players[playerIdx].balance -= hotelCount * 1000
             await boardService.save(copyBoard)
             commit({ type: 'setBoard', board: copyBoard })
 
             break
-          case 'chance-211': // Pay poor tax of $15
+          case 'chance-211': // BAYAR PAJAK MISKIN SEBESAR Rp.2000,
             console.log('chance-211')
-            await dispatch({ type: 'payMoney', playerIdx, amount: 15 })
+            await dispatch({ type: 'payMoney', playerIdx, amount: 2000 })
             break
           case 'chance-212': // collect $200
             console.log('chance-212')
@@ -377,8 +377,12 @@ export default {
             await dispatch({ type: 'collectMoney', playerIdx, amount: 150 })
             break
           case 'chance-216':
-            console.log('chance-216') // COLLECT $100
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 100 })
+            console.log('chance-216') // Dapat sumbangan Rp.2500 
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 2500 })
+            break
+          case 'chance-217':
+            console.log('chance-217') // Melanggar Undang" Pajak Bayar Denda Rp500. 
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 500 })
             break
           default:
           // some code
@@ -424,11 +428,11 @@ export default {
         switch (card._id) {
           case 'community-101': // Advance to "Go". (Collect $200)
             console.log('community-101')
-            await dispatch({ type: 'doSteps', newPosition: 0 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 2000  })
             break
           case 'community-102': // Collect $100
             console.log('community-102')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 100 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 500 })
             break
           case 'community-103': // Get Out of Jail Free
             console.log('community-103')
@@ -444,16 +448,16 @@ export default {
             await boardService.save(copyBoard)
             commit({ type: 'setBoard', board: copyBoard })
             break
-          case 'community-104': // Collect $10
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 10 })
+          case 'community-104': // Collect Rp1000
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 1000 })
             break
           case 'community-105': // Collect $200
             console.log('community-105')
             await dispatch({ type: 'collectMoney', playerIdx, amount: 200 })
             break
-          case 'community-106': // get $50
+          case 'community-106': // get ulang tahun 2000
             console.log('community-106')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 50 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 2000 })
             break
           case 'community-107': // Collect $20
             console.log('community-107')
@@ -461,15 +465,15 @@ export default {
             break
           case 'community-108': // Receive for services $25.
             console.log('community-108')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 25 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 1000 })
             break
-          case 'community-109': // You inherit $100
+          case 'community-109': // Dapet Komisi RP.1.000.
             console.log('community-109')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 100 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 1000 })
             break
           case 'community-110': // Collect $100
             console.log('community-110')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 100 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 1000 })
             break
           case 'community-111': // Collect $50 from every player for opening night seats
             console.log('community-111')
@@ -486,15 +490,15 @@ export default {
             break
           case 'community-112': // Pay $50
             console.log('community-112')
-            await dispatch({ type: 'payMoney', playerIdx, amount: 50 })
+            await dispatch({ type: 'payMoney', playerIdx, amount: 100 })
             break
           case 'community-113': // Pay hospital $100
             console.log('community-113')
-            await dispatch({ type: 'payMoney', playerIdx, amount: 100 })
+            await dispatch({ type: 'payMoney', playerIdx, amount: 1000 })
             break
-          case 'community-114': // Pay school tax of $150
+          case 'community-114': // Pay hiburan tax of $150
             console.log('community-114')
-            await dispatch({ type: 'payMoney', playerIdx, amount: 150 })
+            await dispatch({ type: 'payMoney', playerIdx, amount: 1000 })
             break
           case 'community-115': // You are assessed for street repairs: Pay $40 per house and $115 per hotel you own
             console.log('community-115')

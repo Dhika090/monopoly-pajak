@@ -5,11 +5,15 @@
   >
     <div class="containerr">
       <div class="container-logo">
-        <font-awesome-icon
+
+      <i class="drawing fa fa-smoking"
+      v-if="card.title === 'Pajak Smoking'"
+      ></i>
+        <!-- <font-awesome-icon
           v-if="card.title === 'Waterworks'"
           class="logo"
           icon="faucet-drip"
-        />
+        /> -->
         <font-awesome-icon
           v-if="card.title === 'Electric Company'"
           class="logo"

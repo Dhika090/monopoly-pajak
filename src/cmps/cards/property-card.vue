@@ -12,7 +12,7 @@
           <span class="price">Rp.{{ card.oneHouse }}</span>
         </div>
         <div class="container-price">
-          <p class="house">PPH pasal 4 1(10%)</p>
+          <p class="house">PPh Pasal 4 (2)(10%)</p>
           <span class="price">Rp.{{ card.pph }}</span>
         </div>
         <div class="container-price">
@@ -29,7 +29,7 @@
           <span class="price">Rp.{{ card.threeHouses }}</span>
         </div>
         <div class="container-price">
-          <p class="house">Dengan 1 Rumah</p>
+          <p class="house">Dengan 4 Rumah</p>
           <span class="price">Rp.{{ card.fourHouses }}</span>
         </div>
       </div>

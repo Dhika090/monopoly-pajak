@@ -115,7 +115,7 @@ function getNewBoard(players) {
         players: [],
         owner: null,
         color: '',
-        price: 2000,
+        price: 1000,
         type: 'tax',
       },
       {
@@ -175,7 +175,7 @@ function getNewBoard(players) {
         players: [],
         owner: null,
         color: '',
-        price: 140,
+        price: 150,
         type: 'utility',
       },
       {
@@ -300,7 +300,7 @@ function getNewBoard(players) {
         players: [],
         owner: null,
         color: '',
-        price: 100,
+        rent: 150,
         type: 'utility',
       },
 
@@ -906,7 +906,7 @@ function getNewBoard(players) {
         {
           _id: 'utility-101',
           title: 'Electric Company',
-          price: 140,
+          price: 150,
           rent: '4 * Dice Roll',
           twoAreOwned: '10 * Dice Roll',
           mortgage: 75,
@@ -915,8 +915,8 @@ function getNewBoard(players) {
         },
         {
           _id: 'utility-102',
-          title: 'Waterworks',
-          price: 100,
+          title: 'Pajak Smoking',
+          price: 150,
           rent: '4 * Dice Roll',
           twoAreOwned: '10 * Dice Roll',
           mortgage: 75,
@@ -987,7 +987,7 @@ function getNewBoard(players) {
         {
           _id: 'community-102',
           title: 'Dana Umum',
-          description: 'ASURANSI JIWA JATUH - KUMPULKAN Rp 10.000',
+          description: 'Bayar Asuransi Rp.500',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -1002,7 +1002,7 @@ function getNewBoard(players) {
           _id: 'community-104',
           title: 'Dana Umum',
           description:
-            'ANDA MEMENANGKAN HADIAH KEDUA DALAM KONTES KECANTIKAN. KUMPULKAN Rp 1.000.',
+            'ANDA MEMENANGKAN HADIAH KEDUA DALAM KONTES KECANTIKAN. KUMPULKAN Rp 1000.',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -1030,14 +1030,14 @@ function getNewBoard(players) {
         {
           _id: 'community-108',
           title: 'Dana Umum',
-          description: 'TERIMA UNTUK LAYANAN RP.25',
+          description: 'Dapat Warisan RP.1000, Tidak Kena Pajak krn bukan objek pajak',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
         {
           _id: 'community-109',
           title: 'Dana Umum',
-          description: 'Daper Komisi RP.10.000.',
+          description: 'Dapet Komisi RP.1.000.',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -1059,21 +1059,21 @@ function getNewBoard(players) {
         {
           _id: 'community-112',
           title: 'Dana Umum',
-          description: "BIAYA DOKTER. BAYAR Rp 50",
+          description: "BIAYA DOKTER. BAYAR Rp100",
           background: '#ffeb43',
           type: 'communityChestCard',
         },
         {
           _id: 'community-113',
           title: 'Dana Umum',
-          description: 'BAYAR RUMAH SAKIT RP.10.000.',
+          description: 'BAYAR RUMAH SAKIT RP.1000.',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
         {
           _id: 'community-114',
           title: 'Dana Umum',
-          description: 'MEMBAYAR PAJAK SEKOLAH RP.150',
+          description: 'MEMBAYAR PAJAK HIBURAN RP.1000',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -1081,7 +1081,7 @@ function getNewBoard(players) {
           _id: 'community-115',
           title: 'Dana Umum',
           description:
-            'ANDA DILAYANI UNTUK PERBAIKAN JALAN: BAYAR $40 PER RUMAH DAN $115 PER HOTEL YANG ANDA MILIKI. ',
+            'ANDA DILAYANI UNTUK PERBAIKAN JALAN: BAYAR Rp40 PER RUMAH DAN Rp115 PER HOTEL YANG ANDA MILIKI. ',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -1106,7 +1106,7 @@ function getNewBoard(players) {
           _id: 'chance-202',
           title: 'Kesempatan',
           description:
-            'MAJU KE ILLINOIS AVE. {Komplek}. JIKA ANDA LULUS, KUMPULKAN Rp 2.000.',
+            'MAJU KE KOMPLEK N. JIKA ANDA LULUS, KUMPULKAN Rp 2.000.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1114,7 +1114,7 @@ function getNewBoard(players) {
           _id: 'chance-203',
           title: 'Kesempatan',
           description:
-            'LANJUT KE ST. TEMPAT CHARLES. JIKA ANDA LULUS, KUMPULKAN Rp 2.000 ',
+            'MAJU KE KOMPLEK F. JIKA ANDA LULUS, KUMPULKAN Rp 2.000 ',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1137,7 +1137,7 @@ function getNewBoard(players) {
         {
           _id: 'chance-206',
           title: 'Kesempatan',
-          description: 'BANK MEMBAYAR DIVIDEN SEBESAR $50.',
+          description: 'Terima Uang Dari Bank Rp.1000',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1151,7 +1151,7 @@ function getNewBoard(players) {
         {
           _id: 'chance-208',
           title: 'Kesempatan',
-          description: 'MUNDUR 3 LANGKAH.',
+          description: 'MUNDUR 6 LANGKAH.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1167,14 +1167,14 @@ function getNewBoard(players) {
           _id: 'chance-210',
           title: 'Chance',
           description:
-            'LAKUKAN PERBAIKAN UMUM PADA SEMUA PROPERTI ANDA: UNTUK SETIAP RUMAH BAYAR $25, UNTUK SETIAP HOTEL {BAYAR} Rp 10.00.',
+            'LAKUKAN PERBAIKAN UMUM PADA SEMUA PROPERTI ANDA: UNTUK SETIAP RUMAH BAYAR Rp.250, UNTUK SETIAP HOTEL {BAYAR} Rp 1000.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
         {
           _id: 'chance-211',
           title: 'Kesempatan',
-          description: 'BAYAR PAJAK MISKIN SEBESAR RP.100',
+          description: 'BAYAR PAJAK MISKIN SEBESAR RP.2000',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1182,7 +1182,7 @@ function getNewBoard(players) {
           _id: 'chance-212',
           title: 'Kesempatan',
           description:
-            'MELAKUKAN PERJALANAN UNTUK MEMBACA RAILROAD. JIKA ANDA LULUS, KUMPULKAN $200. ',
+            'MELAKUKAN PERJALANAN UNTUK MEMBACA RAILROAD. JIKA ANDA LULUS, KUMPULKAN Rp200. ',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1190,7 +1190,7 @@ function getNewBoard(players) {
           _id: 'chance-213',
           title: 'Kesempatan',
           description:
-            'BERJALAN-JALAN DI BOARDWALK. TOKEN LANJUTAN KE BOARDWALK.',
+            'BERJALAN-JALAN DI KOMPLEK V. TOKEN LANJUTAN KE JAGAKARSA.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1206,14 +1206,21 @@ function getNewBoard(players) {
           _id: 'chance-215',
           title: 'Kesempatan',
           description:
-            'BANGUNAN ANDA {DAN} PINJAMAN JATUH. TERIMA {KUMPULKAN} $15.000.',
+            'BANGUNAN ANDA {DAN} PINJAMAN JATUH. TERIMA {KUMPULKAN} $150.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
         {
           _id: 'chance-216',
           title: 'Kesempatan',
-          description: 'ANDA TELAH MEMENANGKAN KOMPETISI CROSSWORD. KUMPULKAN $100.',
+          description: 'Dapat sumbangan Rp.2500, tidak kena pajak karena bukan objek pajak.',
+          background: '#ff5c00',
+          type: 'chanceCards',
+        },
+        {
+          _id: 'chance-217',
+          title: 'Kesempatan',
+          description: 'Melanggar Undang" Pajak Bayar Denda Rp500.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1369,7 +1376,7 @@ function _createBoard(name) {
         players: [],
         owner: null,
         color: '',
-        price: 2000,
+        price: 1000,
         type: 'tax',
       },
       {
@@ -1429,7 +1436,7 @@ function _createBoard(name) {
         players: [],
         owner: null,
         color: '',
-        price: 140,
+        price: 150,
         type: 'utility',
       },
       {
@@ -1553,7 +1560,7 @@ function _createBoard(name) {
         players: [],
         owner: null,
         color: '',
-        price: 100,
+        price: 150,
         type: 'utility',
       },
 
@@ -2168,8 +2175,8 @@ function _createBoard(name) {
         },
         {
           _id: 'utility-102',
-          title: 'Waterworks',
-          price: 100,
+          title: 'Pajak Smoking',
+          price: 150,
           rent: '4 * Dice Roll',
           twoAreOwned: '10 * Dice Roll',
           mortgage: 75,
@@ -2290,7 +2297,7 @@ function _createBoard(name) {
         {
           _id: 'community-109',
           title: 'Community Chest',
-          description: 'You inherit $100.',
+          description: 'Dapet Komisi RP.1.000.',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -2404,7 +2411,7 @@ function _createBoard(name) {
         {
           _id: 'chance-208',
           title: 'Chance',
-          description: 'Go Back 3 Spaces.',
+          description: 'MUNDUR 6 LANGKAH',
           background: '#ff5c00',
           type: 'chanceCards',
         },

@@ -1,10 +1,11 @@
 <template>
   <section class="water-work-cmp">
     <div class="containerr" :title="'Waterworks'">
-      <span class="waterwoks"> Waterworks </span>
-      <i class="drawing fa fa-tint"></i>
+      <span class="waterwoks"> Pajak Rokok (10%) </span>
+      <p>Dpp Rp.1500 <br> pajakRP.150 </p>
+      <i class="drawing fa fa-smoking"></i>
     </div>
-    <p class="price">Rp{{ tile.price }}</p>
+    <p class="price">Rp{{ tile.rent }}</p>
 
     <div v-if="tile.players.length" class="players">
       <div class="player" v-for="player in tile.players" :key="player">
