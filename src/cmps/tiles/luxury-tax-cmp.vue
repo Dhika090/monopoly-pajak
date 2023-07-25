@@ -1,13 +1,13 @@
 <template>
-  <section class="luxury-tax-cmp" :title="'Luxury-tax'">
+  <section class="luxury-tax-cmp" :title="'Pajak Parkir'">
     <div class="containerr">
-      <span class="luxury">Luxury</span>
-      <span class="tax">Tax</span>
-      <div class="logoo">f</div>
+      <span class="luxury">Pajak Parkir</span>
+      <span class="tax">(20%)</span>
+      <!-- <div class="logoo">f</div> -->
     </div>
     <div class="footer">
-      <p>Membayar</p>
-      <p>Rp{{ tile.price }}</p>
+      <p>DPP Rp.1000</p>
+      <p>Pajak Rp{{ tile.price }}</p>
     </div>
 
     <div v-if="tile.players.length" class="players">

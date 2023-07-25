@@ -315,10 +315,10 @@ export default {
     },
     async payTax(taxType) {
       let pay
-      if (taxType === 'Pajak penghasilan, bayar') pay = 1000
-      else if (taxType === 'Luxury Tax') pay = 75
+      if (taxType === 'Pajak penghasilan bayar') pay = 1000
+      else if (taxType === 'Pajak Parkir') pay = 200
       else if (taxType === 'Water  Works') pay = 150
-      const msg = `${taxType}, pay ${pay}$`
+      const msg = `${taxType},Rp${pay}`
 
       this.msg = msg
       await this.$store.dispatch({

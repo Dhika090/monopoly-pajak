@@ -365,8 +365,8 @@ export default {
             const currPlayer = copyBoard.players[playerIdx]
             copyBoard.players.forEach((player) => {
               if (player._id !== currPlayer._id) {
-                player.balance += 50
-                copyBoard.players[playerIdx].balance -= 50
+                player.balance += 100
+                copyBoard.players[playerIdx].balance -= 100
               }
             })
             await boardService.save(copyBoard)
@@ -382,7 +382,7 @@ export default {
             break
           case 'chance-217':
             console.log('chance-217') // Melanggar Undang" Pajak Bayar Denda Rp500. 
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 500 })
+            await dispatch({ type: 'payMoney', playerIdx, amount: 500 })
             break
           default:
           // some code
@@ -432,7 +432,7 @@ export default {
             break
           case 'community-102': // Collect $100
             console.log('community-102')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 500 })
+            await dispatch({ type: 'payMoney', playerIdx, amount: 500 })
             break
           case 'community-103': // Get Out of Jail Free
             console.log('community-103')
@@ -453,7 +453,7 @@ export default {
             break
           case 'community-105': // Collect $200
             console.log('community-105')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 200 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 1000 })
             break
           case 'community-106': // get ulang tahun 2000
             console.log('community-106')
@@ -461,7 +461,7 @@ export default {
             break
           case 'community-107': // Collect $20
             console.log('community-107')
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 20 })
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 200 })
             break
           case 'community-108': // Receive for services $25.
             console.log('community-108')

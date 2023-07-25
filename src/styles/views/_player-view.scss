@@ -24,15 +24,21 @@
     left: 0;
     top: 0;
     z-index: 200;
-    background-color: lightgray;
+    background-color: #ccccccb3;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
+    width: 14rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .go-back {
     align-self: end;
     cursor: pointer;
     position: absolute;
+    right: 10px;
+    top: 8px;
   }
   .containerr {
     .player-name {
@@ -43,7 +49,7 @@
 
     .cards-player {
       // overflow-x: auto;
-      height: 390px;
+      height: 445px;;
       // overflow-y: auto;
       min-height: 40vh;
       display: flex;
@@ -52,6 +58,7 @@
       align-items: center;
       flex-direction: column;
       align-content: flex-start;
+          height: 445px;
     }
   }
 }

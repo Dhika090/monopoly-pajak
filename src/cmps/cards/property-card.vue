@@ -7,6 +7,24 @@
       </div>
       <p class="rent">Harga Sewa Rp.{{ card.pph + card.oneHouse }}</p>
       <div class="prices">
+       
+        <div class="container-price">
+          <p class="house">DDP</p>
+          <span class="price">Rp.{{ card.ddp }}</span>
+        </div>
+        <div class="container-price">
+          <p class="house">BPHTB (5%)</p>
+          <span class="price">Rp.{{ card.bphtb }}</span>
+        </div>
+        <div class="container-price">
+          <p class="house">PPN (11%)</p>
+          <span class="price">Rp.{{ card.ppn }}</span>
+        </div>
+        <div class="container-price">
+          <p class="house"><b>Total Harga Rumah</b> </p>
+          <span class="price"><b>Rp.{{ card.ddp + card.bphtb + card.ppn }}</b></span>
+        </div>
+        <br>
         <div class="container-price">
           <p class="house">Dengan 1 Rumah</p>
           <span class="price">Rp.{{ card.oneHouse }}</span>
@@ -16,8 +34,8 @@
           <span class="price">Rp.{{ card.pph }}</span>
         </div>
         <div class="container-price">
-          <p class="house">Total</p>
-          <span class="price">Rp.{{ card.pph + card.oneHouse }}</span>
+          <p class="house"><b>Total</b> </p>
+          <span class="price"><b>Rp.{{ card.pph + card.oneHouse }}</b></span>
         </div>
         <br>
         <div class="container-price">

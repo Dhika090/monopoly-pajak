@@ -1,5 +1,5 @@
 <template>
-  <section class="income-cmp" :title="'Income-tax'">
+  <section class="income-cmp" :title="'pajak penghasilan bayar'">
     <p>TELAT BAYAR</p>
     <p>PAJAK DENDA</p>
     <p>Rp.{{ tile.price }}</p>
