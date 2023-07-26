@@ -1,5 +1,5 @@
 <template>
-  <section class="electric-cmp" :title="'Electric-company'">
+  <section class="electric-cmp" :title="'Pajak Penerang Jalan'">
     <div>
       <p>Pajak Penerang Jalan 10%</p>
       <!-- <font-awesome-icon class="electric-logo" icon="bolt-lightning" /> -->

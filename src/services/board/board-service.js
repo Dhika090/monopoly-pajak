@@ -171,12 +171,12 @@ function getNewBoard(players) {
         type: 'city',
       },
       {
-        name: 'Electric Company',
+        name: 'Pajak Penerang Jalan',
         players: [],
         owner: null,
         color: '',
         price: 150,
-        type: 'utility',
+        type: 'tax',
       },
       {
         name: 'KOMPLEK G RAMBUTAN',
@@ -969,16 +969,16 @@ function getNewBoard(players) {
       ],
 
       utilitiesCards: [
-        {
-          _id: 'utility-101',
-          title: 'Electric Company',
-          price: 150,
-          rent: '4 * Dice Roll',
-          twoAreOwned: '10 * Dice Roll',
-          mortgage: 75,
-          background: '#cf8e61',
-          type: 'utilityCard',
-        },
+        // {
+        //   _id: 'utility-101',
+        //   title: 'Electric Company',
+        //   price: 150,
+        //   rent: '4 * Dice Roll',
+        //   twoAreOwned: '10 * Dice Roll',
+        //   mortgage: 75,
+        //   background: '#cf8e61',
+        //   type: 'utilityCard',
+        // },
         {
           _id: 'utility-102',
           title: 'Pajak Smoking',
@@ -1068,7 +1068,7 @@ function getNewBoard(players) {
           _id: 'community-104',
           title: 'Dana Umum',
           description:
-            'ANDA MEMENANGKAN HADIAH KEDUA DALAM KONTES KECANTIKAN. KUMPULKAN Rp 1000.',
+            'Terima Hadiah Undian Rp.2000 dikurangi Pajak final(25%)Rp500 jadi yang diterima Rp.1500',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -1089,7 +1089,7 @@ function getNewBoard(players) {
         {
           _id: 'community-107',
           title: 'Dana Umum',
-          description: 'PENGEMBALIAN PAJAK PENGHASILAN. KUMPULKAN Rp 2.000 ',
+          description: 'PENGEMBALIAN PAJAK PENGHASILAN. KUMPULKAN Rp 200 ',
           background: '#ffeb43',
           type: 'communityChestCard',
         },
@@ -1225,7 +1225,7 @@ function getNewBoard(players) {
           _id: 'chance-209',
           title: 'Kesempatan',
           description:
-            'PERGI KE PENJARA. LANGSUNG KE PENJARA. JANGAN LULUS, JANGAN KUMPULKAN Rp.200.',
+            'PERGI KE PENJARA. LANGSUNG KE PENJARA. KUMPULKAN Rp.200.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1240,7 +1240,7 @@ function getNewBoard(players) {
         {
           _id: 'chance-211',
           title: 'Kesempatan',
-          description: 'BAYAR PAJAK MISKIN SEBESAR RP.2000',
+          description: 'Bayar Pajak Bumi Dan Bangunan Rp.2000',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -1498,12 +1498,12 @@ function _createBoard(name) {
         type: 'city',
       },
       {
-        name: 'Electric Company',
+        name: 'Pajak Penerang Jalan',
         players: [],
         owner: null,
         color: '',
         price: 150,
-        type: 'utility',
+        type: 'tax',
       },
       {
         name: 'KOMPLEK G RAMBUTAN',
@@ -2295,16 +2295,16 @@ function _createBoard(name) {
       ],
 
       utilitiesCards: [
-        {
-          _id: 'utility-101',
-          title: 'Electric Company',
-          price: 1500,
-          rent: '4 * Dice Roll',
-          twoAreOwned: '10 * Dice Roll',
-          mortgage: 75,
-          background: '#cf8e61',
-          type: 'utilityCard',
-        },
+        // {
+        //   _id: 'utility-101',
+        //   title: 'Electric Company',
+        //   price: 150,
+        //   rent: '4 * Dice Roll',
+        //   twoAreOwned: '10 * Dice Roll',
+        //   mortgage: 75,
+        //   background: '#cf8e61',
+        //   type: 'utilityCard',
+        // },
         {
           _id: 'utility-102',
           title: 'Pajak Smoking',
@@ -2566,7 +2566,7 @@ function _createBoard(name) {
         {
           _id: 'chance-211',
           title: 'Chance',
-          description: 'BAYAR PAJAK MISKIN SEBESAR RP.100',
+          description: 'Bayar Pajak Bumi Dan Bangunan Rp.2000',
           background: '#ff5c00',
           type: 'chanceCards',
         },

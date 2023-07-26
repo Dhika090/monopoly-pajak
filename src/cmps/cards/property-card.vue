@@ -5,11 +5,11 @@
         <p>SERTIFIKAT TANAH</p>
         <h1>{{ card.title }}</h1>
       </div>
-      <p class="rent">Harga Sewa Rp.{{ card.pph + card.oneHouse }}</p>
+      <p class="rent"><b> Harga Beli Rp.{{ card.ddp + card.bphtb + card.ppn }} </b></p>
       <div class="prices">
-       
+        <!-- card.pph + card.oneHouse -->
         <div class="container-price">
-          <p class="house">DDP</p>
+          <p class="house">DPP</p>
           <span class="price">Rp.{{ card.ddp }}</span>
         </div>
         <div class="container-price">
@@ -24,7 +24,8 @@
           <p class="house"><b>Total Harga Rumah</b> </p>
           <span class="price"><b>Rp.{{ card.ddp + card.bphtb + card.ppn }}</b></span>
         </div>
-        <br>
+        <!-- <br> -->
+        <p class="rent"><b> Harga Sewa Rp.{{ card.pph + card.oneHouse }} </b></p>
         <div class="container-price">
           <p class="house">Dengan 1 Rumah</p>
           <span class="price">Rp.{{ card.oneHouse }}</span>

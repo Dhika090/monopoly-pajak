@@ -339,7 +339,7 @@ export default {
             commit({ type: 'setBoard', board: copyBoard })
 
             break
-          case 'chance-211': // BAYAR PAJAK MISKIN SEBESAR Rp.2000,
+          case 'chance-211': // bayar pajak bumi dan bangunan Rp.2000,
             console.log('chance-211')
             await dispatch({ type: 'payMoney', playerIdx, amount: 2000 })
             break
@@ -448,8 +448,8 @@ export default {
             await boardService.save(copyBoard)
             commit({ type: 'setBoard', board: copyBoard })
             break
-          case 'community-104': // Collect Rp1000
-            await dispatch({ type: 'collectMoney', playerIdx, amount: 1000 })
+          case 'community-104': // Terima Hadiah Undian Rp.1500 dikurangi Pajak final
+            await dispatch({ type: 'collectMoney', playerIdx, amount: 1500 })
             break
           case 'community-105': // Collect $200
             console.log('community-105')

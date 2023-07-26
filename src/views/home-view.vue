@@ -1,6 +1,6 @@
 <template>
   <section class="home-view">
-    <img src="../../src/styles/images/bg-mojak.jpg" alt="images" style="height: 38.8rem;">
+    <img src="../../src/styles/images/mojakbg.jpg" alt="images" style="height: 38.8rem;">
     <div class="container">
      
         <div>

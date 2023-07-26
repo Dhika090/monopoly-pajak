@@ -1,7 +1,7 @@
 <template>
   <section>
     
-    <img src="../../src/styles/images/bg-play.jpg" alt="images" style="height: 44rem;">
+    <img src="../../src/styles/images/bglatar.jpg" alt="images" style="height: 44rem;">
     <section class="board-view" v-if="board">
       
       <div class="board-container">
@@ -318,6 +318,7 @@ export default {
       if (taxType === 'Pajak penghasilan bayar') pay = 1000
       else if (taxType === 'Pajak Parkir') pay = 200
       else if (taxType === 'Water  Works') pay = 150
+      else if (taxType === 'Pajak Penerang Jalan') pay = 150
       const msg = `${taxType},Rp${pay}`
 
       this.msg = msg

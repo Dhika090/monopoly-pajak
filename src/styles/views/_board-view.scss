@@ -10,6 +10,8 @@
   justify-content: center;
   padding: 10px;
   .board-container {
+    margin-left: auto;
+    margin-right: auto;
     min-width: 500px;
     min-height: 500px;
     display: grid;
@@ -18,7 +20,7 @@
     border-radius: 7px;
 
     grid-template-columns: 100px repeat(9, 68px) 100px;
-    grid-template-rows: 100px repeat(9, 50px) 100px;
+    grid-template-rows: 100px repeat(9, 51px) 100px;
 
     .tile {
       display: flex;

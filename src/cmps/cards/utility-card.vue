@@ -14,11 +14,11 @@
           class="logo"
           icon="faucet-drip"
         /> -->
-        <font-awesome-icon
+        <!-- <font-awesome-icon
           v-if="card.title === 'Electric Company'"
           class="logo"
           icon="bolt-lightning"
-        />
+        /> -->
       </div>
       <h1 class="title">{{ card.title }}</h1>
       <div class="description">
