@@ -6,9 +6,9 @@
     <div class="containerr">
       <div class="container-logo">
 
-      <i class="drawing fa fa-smoking"
+      <!-- <i class="drawing fa fa-smoking"
       v-if="card.title === 'Pajak Smoking'"
-      ></i>
+      ></i> -->
         <!-- <font-awesome-icon
           v-if="card.title === 'Waterworks'"
           class="logo"
@@ -35,7 +35,7 @@
       </div>
       <div class="mortgage">
         <p>Nilai Hipotek</p>
-        <p class="price">{{ card.price }}Rp</p>
+        <p class="price">Rp{{ card.price }}</p>
       </div>
     </div>
   </section>

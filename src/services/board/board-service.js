@@ -296,14 +296,13 @@ function getNewBoard(players) {
         type: 'city',
       },
       {
-        name: 'Water  Works',
+        name: 'Pajak Rokok',
         players: [],
         owner: null,
         color: '',
-        rent: 150,
-        type: 'utility',
+        price: 150,
+        type: 'tax',
       },
-
       {
         name: 'KOMPLEK Q CILANDAK',
         players: [],
@@ -968,28 +967,28 @@ function getNewBoard(players) {
         },
       ],
 
-      utilitiesCards: [
-        // {
-        //   _id: 'utility-101',
-        //   title: 'Electric Company',
-        //   price: 150,
-        //   rent: '4 * Dice Roll',
-        //   twoAreOwned: '10 * Dice Roll',
-        //   mortgage: 75,
-        //   background: '#cf8e61',
-        //   type: 'utilityCard',
-        // },
-        {
-          _id: 'utility-102',
-          title: 'Pajak Smoking',
-          price: 150,
-          rent: '4 * Dice Roll',
-          twoAreOwned: '10 * Dice Roll',
-          mortgage: 75,
-          background: '#f6f4f4',
-          type: 'utilityCard',
-        },
-      ],
+      // utilitiesCards: [
+      //   {
+      //     _id: 'utility-101',
+      //     title: 'Electric Company',
+      //     price: 150,
+      //     rent: '4 * Dice Roll',
+      //     twoAreOwned: '10 * Dice Roll',
+      //     mortgage: 75,
+      //     background: '#cf8e61',
+      //     type: 'utilityCard',
+      //   },
+      //   {
+      //     _id: 'utility-102',
+      //     title: 'Pajak Smoking',
+      //     price: 150,
+      //     rent: '4 * Dice Roll',
+      //     twoAreOwned: '10 * Dice Roll',
+      //     mortgage: 75,
+      //     background: '#f6f4f4',
+      //     type: 'utilityCard',
+      //   },
+      // ],
 
       railroadsCards: [
         {
@@ -1622,14 +1621,13 @@ function _createBoard(name) {
         type: 'city',
       },
       {
-        name: 'Water  Works',
+        name: 'Pajak Rokok',
         players: [],
         owner: null,
         color: '',
         price: 150,
-        type: 'utility',
+        type: 'tax',
       },
-
       {
         name: 'KOMPLEK Q CILANDAK',
         players: [],
@@ -1707,6 +1705,7 @@ function _createBoard(name) {
         price: 200,
         type: 'tax',
       },
+      
       {
         name: 'KOMPLEK V JAGAKARSA',
         players: [],
@@ -2294,28 +2293,28 @@ function _createBoard(name) {
         },
       ],
 
-      utilitiesCards: [
-        // {
-        //   _id: 'utility-101',
-        //   title: 'Electric Company',
-        //   price: 150,
-        //   rent: '4 * Dice Roll',
-        //   twoAreOwned: '10 * Dice Roll',
-        //   mortgage: 75,
-        //   background: '#cf8e61',
-        //   type: 'utilityCard',
-        // },
-        {
-          _id: 'utility-102',
-          title: 'Pajak Smoking',
-          price: 150,
-          rent: '4 * Dice Roll',
-          twoAreOwned: '10 * Dice Roll',
-          mortgage: 75,
-          background: '#f6f4f4',
-          type: 'utilityCard',
-        },
-      ],
+      // utilitiesCards: [
+      //   {
+      //     _id: 'utility-101',
+      //     title: 'Electric Company',
+      //     price: 150,
+      //     rent: '4 * Dice Roll',
+      //     twoAreOwned: '10 * Dice Roll',
+      //     mortgage: 75,
+      //     background: '#cf8e61',
+      //     type: 'utilityCard',
+      //   },
+      //   {
+      //     _id: 'utility-102',
+      //     title: 'Pajak Smoking',
+      //     price: 150,
+      //     rent: '4 * Dice Roll',
+      //     twoAreOwned: '10 * Dice Roll',
+      //     mortgage: 75,
+      //     background: '#f6f4f4',
+      //     type: 'utilityCard',
+      //   },
+      // ],
 
       railroadsCards: [
         {

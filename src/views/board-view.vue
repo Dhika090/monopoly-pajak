@@ -317,7 +317,7 @@ export default {
       let pay
       if (taxType === 'Pajak penghasilan bayar') pay = 1000
       else if (taxType === 'Pajak Parkir') pay = 200
-      else if (taxType === 'Water  Works') pay = 150
+      else if (taxType === 'Pajak Rokok') pay = 150
       else if (taxType === 'Pajak Penerang Jalan') pay = 150
       const msg = `${taxType},Rp${pay}`
 

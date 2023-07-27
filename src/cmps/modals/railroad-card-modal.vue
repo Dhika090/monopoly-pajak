@@ -3,7 +3,7 @@
     <div class="modal-container">
       <div class="title">
         <p>{{ currPLayer.name }},apakah anda ingin membeli kota ini?</p>
-        <p>{{ card.price }}$</p>
+        <p>Rp {{ card.price }}</p>
       </div>
 
       <div class="body-modal">
