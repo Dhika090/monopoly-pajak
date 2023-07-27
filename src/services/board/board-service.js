@@ -1271,7 +1271,7 @@ function getNewBoard(players) {
           _id: 'chance-215',
           title: 'Kesempatan',
           description:
-            'BANGUNAN ANDA {DAN} PINJAMAN JATUH. TERIMA {KUMPULKAN} $150.',
+            'BANGUNAN ANDA {DAN} PINJAMAN JATUH. TERIMA / {KUMPULKAN} Rp 150.',
           background: '#ff5c00',
           type: 'chanceCards',
         },
@@ -2378,7 +2378,7 @@ function _createBoard(name) {
         {
           _id: 'community-102',
           title: 'Community Chest',
-          description: 'Life insurance matures - Collect $100',
+          description: 'Life insurance matures - Collect Rp100',
           background: '#ffeb43',
           type: 'communityChestCard',
         },

@@ -1,6 +1,6 @@
 <template>
   <section class="water-work-cmp">
-    <div class="containerr" :title="'Water works'">
+    <div class="containerr" :title="'Pajak Rokok'">
       <span class="waterwoks"> Pajak Rokok (10%) </span>
       <p>Dpp Rp.1500 <br> pajakRP.150 </p>
       <i class="drawing fa fa-smoking"></i>
